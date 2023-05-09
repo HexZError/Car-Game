@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url('./car images/road\ side.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+.score-container{
+    position: absolute;
+    font-size: 3rem;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: white;
+}
+#road-container{
+    display: flex;
+    justify-content: center;
+}
+#road-container img{
+    position: absolute;
+    z-index: -1;
+    height:200vh;
+}
+.enemycars-container{
+    display: flex;
+    justify-content: center;
+}
+.cars1{
+    position: relative;
+    left: -190px;
+    animation: ecar1 infinite linear 8s;
+}
+.cars2{
+    position: relative;
+    left: -50px;
+    animation: ecar1 infinite linear 7s;
+
+}
+.cars3{
+    position: relative;
+    left: 100px;
+    animation: ecar1 infinite linear 8s;
+
+}
+.cars4{
+    position: relative;
+    left: 250px;
+    animation: ecar1 infinite linear 6s;
+
+}
+.cars{
+    width: 100px;
+    -webkit-transform: scaleY(-11);
+    transform: scaleY(-1);
+    /* border: 2px solid red; */
+}
+#mycar{
+    position: absolute;
+    left: 700px;
+    top: 70vh;
+}
+#mycar img{
+    width: 80px;
+    /* border: 2px solid red; */
+}
+
+#start-stop-button{
+    display: flex;
+    margin-top: 400px;
+    margin-left: 5px;
+}
+#start-stop-button button{
+    padding: 20px;
+    margin: 10px;
+    font-size: 2rem;
+}
+@keyframes ecar1 {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes ecar2 {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes ecar3 {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 100vh;
+    }
+}
+@keyframes ecar4 {
+    0%{
+        top: -200px;
+    }
+    100%{
+        top: 100vh;
+    }
+}

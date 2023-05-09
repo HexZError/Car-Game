@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Car Game</title>
+</head>
+<body onkeydown="getKeyAndMove(event)">
+    <div class="score-container">
+        <p>Score:<span id="score">0</span></p>
+    </div>
+    <div id="road-container">
+        <img src="car images/road.jpg" id="image">
+    </div>
+    <div class="enemycars-container">
+        <img class="cars cars1" id="eCar1" src="car images/car1.png">
+        <img class="cars cars2" id="eCar2" src="car images/car2.png">
+        <img class="cars cars3" id="eCar3" src="car images/car3.png">
+        <img class="cars cars4" id="eCar4" src="car images/car3.png">
+    </div>
+    <div id="mycar">
+        <img src="./car images/mycar.png" id="mysupra" onfocus="myFunction(this)">
+    </div>
+    <div id="start-stop-button">
+        <button onclick="start_game()">Start</button>
+        <button onclick="stop_game()">Stop</button>
+    </div>
+    <script src="mind.js"></script>
+</body>
+</html>
